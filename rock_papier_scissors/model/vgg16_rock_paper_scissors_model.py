@@ -9,7 +9,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 class RockPaperScissorsVgg16:
     def __init__(self, input_width, input_height):
         self.input_shape = (input_width, input_height, 3)
-        self.classes = 3
+        self.classes = 4
         self.model = None
         self.build_model()
 
