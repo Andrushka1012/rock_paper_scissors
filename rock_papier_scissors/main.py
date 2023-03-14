@@ -55,7 +55,7 @@ def get_trained():
     return model
 
 
-rpc_model = restore_vgg16()
+rpc_model = restore_vgg16(test_model=True)
 predict_on_video(rpc_model)
 
 # while True:
