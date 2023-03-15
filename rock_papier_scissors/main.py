@@ -8,6 +8,7 @@ from data.dataset import preprocess_image, get_merged_dataset, INPUT_HEIGHT, INP
 from training.cnn import train_cnn
 
 from training.vgg16 import train_vgg16, restore_vgg16
+from utils.converter import save_model, convert
 
 
 def predict_on_file(model):
@@ -56,7 +57,7 @@ def get_trained():
 
 
 rpc_model = restore_vgg16()
-predict_on_video(rpc_model)
+convert(rpc_model)
 
 # while True:
 #     predict_on_file(rpc_model)
