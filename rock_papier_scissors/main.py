@@ -8,7 +8,7 @@ from data.dataset import preprocess_image, get_merged_dataset, INPUT_HEIGHT, INP
 from training.cnn import train_cnn
 
 from training.vgg16 import train_vgg16, restore_vgg16
-from utils.converter import save_model, convert
+from utils.converter import convert
 
 
 def predict_on_file(model):
