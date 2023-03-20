@@ -56,10 +56,8 @@ def get_trained():
     return model
 
 
-generate_nothing_dataset()
-
-# rpc_model = restore_vgg16()
-# predict_on_video(rpc_model)
+rpc_model = get_trained()
+predict_on_video(rpc_model)
 # # convert(rpc_model)
 #
 # # while True:
