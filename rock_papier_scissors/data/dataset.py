@@ -9,7 +9,7 @@ from keras.utils import load_img, img_to_array, to_categorical
 import requests
 from PIL import Image
 
-INPUT_WIDTH = 100
+INPUT_WIDTH = 150
 INPUT_HEIGHT = 150
 
 TARGET_SIZE = (INPUT_WIDTH, INPUT_HEIGHT)
@@ -118,15 +118,15 @@ def generate_noice(original_dir: str):
 def generate_nothing_dataset():
     for i in range(100):
         generate_noice(TRAIN_DIR_1)
-    for i in range(30):
-        generate_noice(TEST_DIR_1)
+    # for i in range(30):
+    #     generate_noice(TEST_DIR_1)
 
-    for i in range(900):
+    for i in range(500):
         generate_noice(TRAIN_DIR_2)
-    for i in range(125):
-        generate_noice(TEST_DIR_2)
+    # for i in range(125):
+    #     generate_noice(TEST_DIR_2)
 
-    for i in range(630):
+    for i in range(400):
         generate_noice(TRAIN_DIR_3)
-    for i in range(30):
-        generate_noice(TEST_DIR_3)
+    # for i in range(30):
+    #     generate_noice(TEST_DIR_3)
