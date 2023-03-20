@@ -29,6 +29,7 @@ def train_vgg16(train_images, train_labels) -> Model:
         validation_steps=10,
         callbacks=[StopByAccuracyCallback()]
     )
+    print(f"Save weights into {MODEL_NAME}")
     model.save_weights(MODEL_NAME)
 
     test(model)

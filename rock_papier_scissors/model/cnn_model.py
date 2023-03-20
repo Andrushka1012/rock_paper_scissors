@@ -5,7 +5,7 @@ from data.dataset import INPUT_WIDTH, INPUT_HEIGHT
 
 
 class CnnModel(keras.Model):
-    def __init__(self, num_classes=3):
+    def __init__(self, num_classes=4):
         super().__init__()
 
         self.conv1 = Conv2D(32, (3, 3), activation='relu', input_shape=(INPUT_WIDTH, INPUT_HEIGHT, 3))
