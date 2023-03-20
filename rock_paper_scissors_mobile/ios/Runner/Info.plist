@@ -47,5 +47,9 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+    <string>Use camera for object detection</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Use camera for object detection</string>
 </dict>
 </plist>

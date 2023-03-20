@@ -1,0 +1,500 @@
+/Users/andriimakarenko/Desktop/euvic/TipaJaUczus/AI/rock_papier_scissors/rock_papier_scissors/bin/python /Applications/PyCharm CE.app/Contents/plugins/python-ce/helpers/pydev/pydevd.py --multiprocess --qt-support=auto --client 127.0.0.1 --port 59763 --file /Users/andriimakarenko/Desktop/euvic/TipaJaUczus/AI/rock_papier_scissors/main.py
+Connected to pydev debugger (build 223.8617.48)
+2023-03-13 12:59:08.019508: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-13 13:01:06.940269: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Train dataset_1_rock_papier_scissors.h5
+Epoch 1/20
+4/4 [==============================] - 14s 1s/step - loss: 88.9234 - accuracy: 0.3942 - val_loss: 10.0792 - val_accuracy: 0.3778
+Epoch 2/20
+4/4 [==============================] - 2s 523ms/step - loss: 4.7436 - accuracy: 0.4615 - val_loss: 1.1842 - val_accuracy: 0.3111
+Epoch 3/20
+4/4 [==============================] - 2s 418ms/step - loss: 1.4355 - accuracy: 0.3269 - val_loss: 1.3334 - val_accuracy: 0.3333
+Epoch 4/20
+4/4 [==============================] - 2s 429ms/step - loss: 1.2285 - accuracy: 0.2885 - val_loss: 1.0795 - val_accuracy: 0.3333
+Epoch 5/20
+4/4 [==============================] - 2s 424ms/step - loss: 1.0490 - accuracy: 0.3462 - val_loss: 1.0115 - val_accuracy: 0.4889
+Epoch 6/20
+4/4 [==============================] - 2s 404ms/step - loss: 0.9632 - accuracy: 0.5385 - val_loss: 1.0661 - val_accuracy: 0.5111
+Epoch 7/20
+4/4 [==============================] - 2s 414ms/step - loss: 0.9373 - accuracy: 0.5096 - val_loss: 1.0416 - val_accuracy: 0.4667
+Epoch 8/20
+4/4 [==============================] - 2s 410ms/step - loss: 0.8245 - accuracy: 0.6538 - val_loss: 1.1865 - val_accuracy: 0.4667
+Epoch 9/20
+4/4 [==============================] - 2s 411ms/step - loss: 0.7536 - accuracy: 0.6154 - val_loss: 0.8455 - val_accuracy: 0.6000
+Epoch 10/20
+4/4 [==============================] - 2s 404ms/step - loss: 0.6556 - accuracy: 0.7308 - val_loss: 0.8392 - val_accuracy: 0.5333
+Epoch 11/20
+4/4 [==============================] - 2s 413ms/step - loss: 0.4775 - accuracy: 0.7981 - val_loss: 0.8533 - val_accuracy: 0.6667
+Epoch 12/20
+4/4 [==============================] - 2s 506ms/step - loss: 0.3926 - accuracy: 0.8462 - val_loss: 0.7161 - val_accuracy: 0.6889
+Epoch 13/20
+4/4 [==============================] - 2s 491ms/step - loss: 0.2738 - accuracy: 0.9135 - val_loss: 0.7560 - val_accuracy: 0.7111
+Epoch 14/20
+4/4 [==============================] - 2s 525ms/step - loss: 0.1827 - accuracy: 0.9519 - val_loss: 0.9054 - val_accuracy: 0.6444
+Epoch 15/20
+4/4 [==============================] - 2s 508ms/step - loss: 0.1662 - accuracy: 0.9327 - val_loss: 1.4774 - val_accuracy: 0.5556
+Epoch 16/20
+4/4 [==============================] - 2s 483ms/step - loss: 0.2897 - accuracy: 0.9038 - val_loss: 0.7934 - val_accuracy: 0.7333
+Epoch 17/20
+4/4 [==============================] - 2s 489ms/step - loss: 0.3384 - accuracy: 0.9038 - val_loss: 1.1823 - val_accuracy: 0.4000
+Epoch 18/20
+4/4 [==============================] - 2s 449ms/step - loss: 0.4049 - accuracy: 0.8269 - val_loss: 1.3117 - val_accuracy: 0.5111
+Epoch 19/20
+4/4 [==============================] - 2s 412ms/step - loss: 0.3276 - accuracy: 0.8558 - val_loss: 1.7859 - val_accuracy: 0.5556
+Epoch 20/20
+4/4 [==============================] - 2s 421ms/step - loss: 0.3337 - accuracy: 0.8846 - val_loss: 0.8662 - val_accuracy: 0.7111
+Test dataset 1
+3/3 [==============================] - 0s 103ms/step - loss: 1.3376 - accuracy: 0.4643
+Test loss: 1.337571144104004
+Test accuracy: 0.4642857015132904
+Test dataset 2
+16/16 [==============================] - 2s 133ms/step - loss: 1.6285 - accuracy: 0.4623
+Test loss: 1.6284984350204468
+Test accuracy: 0.4623015820980072
+Test dataset 3
+5/5 [==============================] - 1s 162ms/step - loss: 1.9736 - accuracy: 0.3396
+Test loss: 1.9736047983169556
+Test accuracy: 0.3396226465702057
+Test merged dataset
+24/24 [==============================] - 3s 125ms/step - loss: 1.6692 - accuracy: 0.4364
+Test loss: 1.669240117073059
+Test accuracy: 0.4364123046398163
+Train dataset_2_rock_papier_scissors.h5
+Epoch 1/20
+55/55 [==============================] - 33s 530ms/step - loss: 7.1059 - accuracy: 0.7071 - val_loss: 0.0642 - val_accuracy: 0.9801
+Epoch 2/20
+55/55 [==============================] - ETA: 0s - loss: 0.0171 - accuracy: 0.9937
+For Epoch 1
+Accuracy has reach = 99.37% training has been stopped.
+55/55 [==============================] - 30s 552ms/step - loss: 0.0171 - accuracy: 0.9937 - val_loss: 0.0127 - val_accuracy: 0.9960
+Test dataset 1
+3/3 [==============================] - 0s 116ms/step - loss: 4.6127 - accuracy: 0.2976
+Test loss: 4.612741470336914
+Test accuracy: 0.2976190447807312
+Test dataset 2
+16/16 [==============================] - 2s 132ms/step - loss: 1.3468 - accuracy: 0.7897
+Test loss: 1.3468025922775269
+Test accuracy: 0.7896825671195984
+Test dataset 3
+5/5 [==============================] - 1s 134ms/step - loss: 1.8946 - accuracy: 0.3836
+Test loss: 1.8945978879928589
+Test accuracy: 0.3836477994918823
+Test merged dataset
+24/24 [==============================] - 3s 129ms/step - loss: 1.8307 - accuracy: 0.6479
+Test loss: 1.8306559324264526
+Test accuracy: 0.6479250192642212
+Train dataset_3_rock_papier_scissors.h5
+Epoch 1/20
+45/45 [==============================] - 28s 534ms/step - loss: 5.7122 - accuracy: 0.7346 - val_loss: 0.2978 - val_accuracy: 0.9125
+Epoch 2/20
+45/45 [==============================] - 21s 473ms/step - loss: 0.1454 - accuracy: 0.9505 - val_loss: 0.0850 - val_accuracy: 0.9736
+Epoch 3/20
+45/45 [==============================] - 22s 498ms/step - loss: 0.0676 - accuracy: 0.9788 - val_loss: 0.1850 - val_accuracy: 0.9406
+Epoch 4/20
+45/45 [==============================] - 22s 488ms/step - loss: 0.0774 - accuracy: 0.9766 - val_loss: 0.0697 - val_accuracy: 0.9769
+Epoch 5/20
+45/45 [==============================] - ETA: 0s - loss: 0.0284 - accuracy: 0.9929
+For Epoch 4
+Accuracy has reach = 99.29% training has been stopped.
+45/45 [==============================] - 22s 490ms/step - loss: 0.0284 - accuracy: 0.9929 - val_loss: 0.0885 - val_accuracy: 0.9785
+Test dataset 1
+3/3 [==============================] - 0s 113ms/step - loss: 3.4669 - accuracy: 0.4762
+Test loss: 3.4668960571289062
+Test accuracy: 0.4761904776096344
+Test dataset 2
+16/16 [==============================] - 2s 134ms/step - loss: 6.2141 - accuracy: 0.3353
+Test loss: 6.2141008377075195
+Test accuracy: 0.335317462682724
+Test dataset 3
+5/5 [==============================] - 1s 131ms/step - loss: 0.0531 - accuracy: 0.9874
+Test loss: 0.05309593677520752
+Test accuracy: 0.9874213933944702
+Test merged dataset
+24/24 [==============================] - 3s 131ms/step - loss: 4.5938 - accuracy: 0.4900
+Test loss: 4.593799591064453
+Test accuracy: 0.48995983600616455
+Train dataset_merged_rock_papier_scissors.h5
+Epoch 1/20
+103/103 [==============================] - 57s 509ms/step - loss: 3.1741 - accuracy: 0.7831 - val_loss: 0.5401 - val_accuracy: 0.7798
+Epoch 2/20
+103/103 [==============================] - 51s 492ms/step - loss: 0.1302 - accuracy: 0.9591 - val_loss: 0.1608 - val_accuracy: 0.9430
+Epoch 3/20
+103/103 [==============================] - ETA: 0s - loss: 0.0588 - accuracy: 0.9801
+For Epoch 2
+Accuracy has reach = 98.01% training has been stopped.
+103/103 [==============================] - 51s 494ms/step - loss: 0.0588 - accuracy: 0.9801 - val_loss: 0.0935 - val_accuracy: 0.9622
+Test dataset 1
+3/3 [==============================] - 0s 101ms/step - loss: 1.6618 - accuracy: 0.5714
+Test loss: 1.6617809534072876
+Test accuracy: 0.5714285969734192
+Test dataset 2
+16/16 [==============================] - 2s 125ms/step - loss: 0.9587 - accuracy: 0.7976
+Test loss: 0.9587315320968628
+Test accuracy: 0.7976190447807312
+Test dataset 3
+5/5 [==============================] - 1s 123ms/step - loss: 0.1085 - accuracy: 0.9623
+Test loss: 0.10849354416131973
+Test accuracy: 0.9622641801834106
+Test merged dataset
+24/24 [==============================] - 3s 123ms/step - loss: 0.8568 - accuracy: 0.8072
+Test loss: 0.856814980506897
+Test accuracy: 0.8072289228439331
+Train dataset_1_rock_papier_scissors_generated.h5
+Epoch 1/50
+40/40 [==============================] - 8s 80ms/step - loss: 1.2426 - accuracy: 0.3083 - val_loss: 1.1178 - val_accuracy: 0.2414
+WARNING:tensorflow:Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches (in this case, 2000 batches). You may need to use the repeat() function when building your dataset.
+WARNING:tensorflow:Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches (in this case, 10 batches). You may need to use the repeat() function when building your dataset.
+Test dataset 1
+3/3 [==============================] - 0s 104ms/step - loss: 12.2826 - accuracy: 0.3571
+Test loss: 12.282567977905273
+Test accuracy: 0.3571428656578064
+Test dataset 2
+16/16 [==============================] - 2s 123ms/step - loss: 18.3308 - accuracy: 0.3155
+Test loss: 18.330778121948242
+Test accuracy: 0.3154761791229248
+Test dataset 3
+5/5 [==============================] - 1s 123ms/step - loss: 8.6803 - accuracy: 0.4969
+Test loss: 8.680310249328613
+Test accuracy: 0.49685534834861755
+Test merged dataset
+24/24 [==============================] - 3s 126ms/step - loss: 15.5965 - accuracy: 0.3588
+Test loss: 15.596542358398438
+Test accuracy: 0.35876840353012085
+Train dataset_2_rock_papier_scissors_generated.h5
+Epoch 1/50
+40/40 [==============================] - 26s 550ms/step - loss: 1.0594 - accuracy: 0.4256 - val_loss: 0.8866 - val_accuracy: 0.5375
+Epoch 2/50
+40/40 [==============================] - 20s 501ms/step - loss: 0.4620 - accuracy: 0.8167 - val_loss: 0.3545 - val_accuracy: 0.8719
+Epoch 3/50
+40/40 [==============================] - 21s 523ms/step - loss: 0.1867 - accuracy: 0.9312 - val_loss: 0.0435 - val_accuracy: 0.9969
+Epoch 4/50
+40/40 [==============================] - 21s 514ms/step - loss: 0.0670 - accuracy: 0.9795 - val_loss: 0.0227 - val_accuracy: 0.9937
+Epoch 5/50
+40/40 [==============================] - ETA: 0s - loss: 0.0477 - accuracy: 0.9898
+For Epoch 4
+Accuracy has reach = 98.98% training has been stopped.
+40/40 [==============================] - 21s 516ms/step - loss: 0.0477 - accuracy: 0.9898 - val_loss: 0.0619 - val_accuracy: 0.9750
+Test dataset 1
+3/3 [==============================] - 0s 111ms/step - loss: 774.9622 - accuracy: 0.3929
+Test loss: 774.962158203125
+Test accuracy: 0.3928571343421936
+Test dataset 2
+16/16 [==============================] - 2s 131ms/step - loss: 151.7730 - accuracy: 0.8452
+Test loss: 151.77301025390625
+Test accuracy: 0.8452380895614624
+Test dataset 3
+5/5 [==============================] - 1s 128ms/step - loss: 392.7084 - accuracy: 0.5220
+Test loss: 392.70843505859375
+Test accuracy: 0.5220125913619995
+Test merged dataset
+24/24 [==============================] - 3s 125ms/step - loss: 273.1339 - accuracy: 0.7256
+Test loss: 273.1339111328125
+Test accuracy: 0.725568950176239
+Train dataset_3_rock_papier_scissors_generated.h5
+Epoch 1/50
+40/40 [==============================] - 26s 547ms/step - loss: 1.0082 - accuracy: 0.4541 - val_loss: 0.6258 - val_accuracy: 0.7312
+Epoch 2/50
+40/40 [==============================] - 20s 507ms/step - loss: 0.3270 - accuracy: 0.8797 - val_loss: 0.2181 - val_accuracy: 0.9219
+Epoch 3/50
+40/40 [==============================] - 21s 513ms/step - loss: 0.2409 - accuracy: 0.9209 - val_loss: 0.1870 - val_accuracy: 0.9406
+Epoch 4/50
+40/40 [==============================] - 21s 522ms/step - loss: 0.1951 - accuracy: 0.9359 - val_loss: 0.1401 - val_accuracy: 0.9594
+Epoch 5/50
+40/40 [==============================] - 22s 544ms/step - loss: 0.1485 - accuracy: 0.9502 - val_loss: 0.1063 - val_accuracy: 0.9719
+Epoch 6/50
+40/40 [==============================] - 23s 563ms/step - loss: 0.1339 - accuracy: 0.9602 - val_loss: 0.1518 - val_accuracy: 0.9406
+Epoch 7/50
+40/40 [==============================] - 21s 524ms/step - loss: 0.1596 - accuracy: 0.9462 - val_loss: 0.1958 - val_accuracy: 0.9438
+Epoch 8/50
+40/40 [==============================] - 21s 530ms/step - loss: 0.1371 - accuracy: 0.9557 - val_loss: 0.1386 - val_accuracy: 0.9500
+Epoch 9/50
+40/40 [==============================] - 22s 537ms/step - loss: 0.1242 - accuracy: 0.9597 - val_loss: 0.0931 - val_accuracy: 0.9688
+Epoch 10/50
+40/40 [==============================] - 22s 540ms/step - loss: 0.1064 - accuracy: 0.9660 - val_loss: 0.0913 - val_accuracy: 0.9719
+Epoch 11/50
+40/40 [==============================] - 22s 546ms/step - loss: 0.1207 - accuracy: 0.9660 - val_loss: 0.1035 - val_accuracy: 0.9563
+Epoch 12/50
+40/40 [==============================] - 21s 533ms/step - loss: 0.1056 - accuracy: 0.9723 - val_loss: 0.1044 - val_accuracy: 0.9625
+Epoch 13/50
+40/40 [==============================] - 23s 571ms/step - loss: 0.0926 - accuracy: 0.9680 - val_loss: 0.0407 - val_accuracy: 0.9875
+Epoch 14/50
+40/40 [==============================] - ETA: 0s - loss: 0.0687 - accuracy: 0.9810
+For Epoch 13
+Accuracy has reach = 98.10% training has been stopped.
+40/40 [==============================] - 21s 523ms/step - loss: 0.0687 - accuracy: 0.9810 - val_loss: 0.0742 - val_accuracy: 0.9719
+Test dataset 1
+3/3 [==============================] - 0s 115ms/step - loss: 1026.4414 - accuracy: 0.4286
+Test loss: 1026.44140625
+Test accuracy: 0.4285714328289032
+Test dataset 2
+16/16 [==============================] - 2s 139ms/step - loss: 1831.5583 - accuracy: 0.3333
+Test loss: 1831.558349609375
+Test accuracy: 0.3333333432674408
+Test dataset 3
+5/5 [==============================] - 1s 131ms/step - loss: 6.6220 - accuracy: 0.9811
+Test loss: 6.621994972229004
+Test accuracy: 0.9811320900917053
+Test merged dataset
+24/24 [==============================] - 3s 128ms/step - loss: 1352.5830 - accuracy: 0.4819
+Test loss: 1352.5830078125
+Test accuracy: 0.4819277226924896
+Train dataset_merged_rock_papier_scissors_generated.h5
+Epoch 1/50
+40/40 [==============================] - 27s 577ms/step - loss: 0.9916 - accuracy: 0.4867 - val_loss: 0.9371 - val_accuracy: 0.6219
+Epoch 2/50
+40/40 [==============================] - 22s 557ms/step - loss: 0.6216 - accuracy: 0.7508 - val_loss: 0.7396 - val_accuracy: 0.7125
+Epoch 3/50
+40/40 [==============================] - 21s 527ms/step - loss: 0.3834 - accuracy: 0.8586 - val_loss: 0.5487 - val_accuracy: 0.8219
+Epoch 4/50
+40/40 [==============================] - 22s 539ms/step - loss: 0.2678 - accuracy: 0.9029 - val_loss: 0.4153 - val_accuracy: 0.8656
+Epoch 5/50
+40/40 [==============================] - 25s 615ms/step - loss: 0.1990 - accuracy: 0.9305 - val_loss: 0.4791 - val_accuracy: 0.8375
+Epoch 6/50
+40/40 [==============================] - 24s 594ms/step - loss: 0.1933 - accuracy: 0.9311 - val_loss: 0.5769 - val_accuracy: 0.8750
+Epoch 7/50
+40/40 [==============================] - 30s 753ms/step - loss: 0.1632 - accuracy: 0.9477 - val_loss: 0.3834 - val_accuracy: 0.8719
+Epoch 8/50
+40/40 [==============================] - 33s 821ms/step - loss: 0.1145 - accuracy: 0.9624 - val_loss: 0.5355 - val_accuracy: 0.8687
+Epoch 9/50
+40/40 [==============================] - 41s 1s/step - loss: 0.1220 - accuracy: 0.9563 - val_loss: 0.5592 - val_accuracy: 0.8844
+Epoch 10/50
+40/40 [==============================] - 30s 738ms/step - loss: 0.1122 - accuracy: 0.9655 - val_loss: 0.4742 - val_accuracy: 0.8500
+Epoch 11/50
+40/40 [==============================] - 25s 611ms/step - loss: 0.0889 - accuracy: 0.9688 - val_loss: 0.4801 - val_accuracy: 0.8687
+Epoch 12/50
+40/40 [==============================] - 24s 609ms/step - loss: 0.0869 - accuracy: 0.9719 - val_loss: 0.6480 - val_accuracy: 0.8813
+Epoch 13/50
+40/40 [==============================] - 23s 564ms/step - loss: 0.0681 - accuracy: 0.9773 - val_loss: 0.4000 - val_accuracy: 0.9062
+Epoch 14/50
+40/40 [==============================] - 27s 671ms/step - loss: 0.0747 - accuracy: 0.9797 - val_loss: 0.5027 - val_accuracy: 0.9062
+Epoch 15/50
+40/40 [==============================] - ETA: 0s - loss: 0.0513 - accuracy: 0.9836
+For Epoch 14
+Accuracy has reach = 98.36% training has been stopped.
+40/40 [==============================] - 28s 700ms/step - loss: 0.0513 - accuracy: 0.9836 - val_loss: 0.7710 - val_accuracy: 0.8656
+Test dataset 1
+3/3 [==============================] - 0s 124ms/step - loss: 909.7850 - accuracy: 0.4643
+Test loss: 909.7849731445312
+Test accuracy: 0.4642857015132904
+Test dataset 2
+16/16 [==============================] - 3s 164ms/step - loss: 141.9889 - accuracy: 0.7917
+Test loss: 141.98892211914062
+Test accuracy: 0.7916666865348816
+Test dataset 3
+5/5 [==============================] - 1s 128ms/step - loss: 10.6118 - accuracy: 0.9686
+Test loss: 10.6117582321167
+Test accuracy: 0.9685534834861755
+Test merged dataset
+24/24 [==============================] - 3s 134ms/step - loss: 200.3636 - accuracy: 0.7925
+Test loss: 200.36361694335938
+Test accuracy: 0.7925033569335938
+
+VGG16
+
+Train dataset_1_rock_papier_scissors_vgg16.h5
+Epoch 1/20
+4/4 [==============================] - 11s 2s/step - loss: 13.6946 - accuracy: 0.4712 - val_loss: 4.2471 - val_accuracy: 0.7111
+Epoch 2/20
+4/4 [==============================] - 8s 2s/step - loss: 4.5942 - accuracy: 0.8846 - val_loss: 2.3549 - val_accuracy: 0.8000
+Epoch 3/20
+4/4 [==============================] - 9s 2s/step - loss: 3.0914 - accuracy: 0.8846 - val_loss: 1.7832 - val_accuracy: 0.9333
+Epoch 4/20
+4/4 [==============================] - 8s 2s/step - loss: 1.0897 - accuracy: 0.9231 - val_loss: 1.3857 - val_accuracy: 0.9111
+Epoch 5/20
+4/4 [==============================] - 7s 2s/step - loss: 0.4512 - accuracy: 0.9615 - val_loss: 1.2567 - val_accuracy: 0.9111
+Epoch 6/20
+4/4 [==============================] - 8s 2s/step - loss: 0.3856 - accuracy: 0.9712 - val_loss: 1.9846 - val_accuracy: 0.8444
+Epoch 7/20
+4/4 [==============================] - ETA: 0s - loss: 0.6988 - accuracy: 0.9808
+For Epoch 6
+Accuracy has reach = 98.08% training has been stopped.
+4/4 [==============================] - 8s 2s/step - loss: 0.6988 - accuracy: 0.9808 - val_loss: 2.3393 - val_accuracy: 0.8667
+Test dataset 1
+3/3 [==============================] - 4s 1s/step - loss: 9.6137 - accuracy: 0.6429
+Test loss: 9.61367130279541
+Test accuracy: 0.6428571343421936
+Test dataset 2
+16/16 [==============================] - 25s 2s/step - loss: 21.2118 - accuracy: 0.6806
+Test loss: 21.211830139160156
+Test accuracy: 0.6805555820465088
+Test dataset 3
+5/5 [==============================] - 8s 2s/step - loss: 8.0535 - accuracy: 0.5786
+Test loss: 8.053479194641113
+Test accuracy: 0.5786163806915283
+Test merged dataset
+24/24 [==============================] - 37s 2s/step - loss: 17.1068 - accuracy: 0.6546
+Test loss: 17.106843948364258
+Test accuracy: 0.654618501663208
+Train dataset_2_rock_papier_scissors_vgg16.h5
+Epoch 1/20
+55/55 [==============================] - 127s 2s/step - loss: 1.5515 - accuracy: 0.9470 - val_loss: 0.0000e+00 - val_accuracy: 1.0000
+Epoch 2/20
+55/55 [==============================] - ETA: 0s - loss: 0.0829 - accuracy: 0.9949
+For Epoch 1
+Accuracy has reach = 99.49% training has been stopped.
+55/55 [==============================] - 122s 2s/step - loss: 0.0829 - accuracy: 0.9949 - val_loss: 0.0000e+00 - val_accuracy: 1.0000
+Test dataset 1
+3/3 [==============================] - 4s 1s/step - loss: 47.6554 - accuracy: 0.3810
+Test loss: 47.655418395996094
+Test accuracy: 0.380952388048172
+Test dataset 2
+16/16 [==============================] - 25s 2s/step - loss: 19.7568 - accuracy: 0.6825
+Test loss: 19.7568359375
+Test accuracy: 0.682539701461792
+Test dataset 3
+5/5 [==============================] - 8s 2s/step - loss: 20.5958 - accuracy: 0.5786
+Test loss: 20.595775604248047
+Test accuracy: 0.5786163806915283
+Test merged dataset
+24/24 [==============================] - 36s 2s/step - loss: 23.0726 - accuracy: 0.6265
+Test loss: 23.07259178161621
+Test accuracy: 0.6265060305595398
+Train dataset_3_rock_papier_scissors_vgg16.h5
+Epoch 1/20
+45/45 [==============================] - 102s 2s/step - loss: 1.6847 - accuracy: 0.9349 - val_loss: 0.0844 - val_accuracy: 0.9950
+Epoch 2/20
+45/45 [==============================] - ETA: 0s - loss: 0.0815 - accuracy: 0.9936
+For Epoch 1
+Accuracy has reach = 99.36% training has been stopped.
+45/45 [==============================] - 98s 2s/step - loss: 0.0815 - accuracy: 0.9936 - val_loss: 0.2164 - val_accuracy: 0.9901
+Test dataset 1
+3/3 [==============================] - 4s 1s/step - loss: 13.6261 - accuracy: 0.5357
+Test loss: 13.626136779785156
+Test accuracy: 0.5357142686843872
+Test dataset 2
+16/16 [==============================] - 24s 2s/step - loss: 8.7225 - accuracy: 0.6250
+Test loss: 8.722489356994629
+Test accuracy: 0.625
+Test dataset 3
+5/5 [==============================] - 7s 1s/step - loss: 0.2054 - accuracy: 0.9937
+Test loss: 0.20537139475345612
+Test accuracy: 0.9937106966972351
+Test merged dataset
+24/24 [==============================] - 37s 2s/step - loss: 7.4610 - accuracy: 0.6934
+Test loss: 7.46102237701416
+Test accuracy: 0.6934404373168945
+Train dataset_merged_rock_papier_scissors_vgg16.h5
+Epoch 1/20
+103/103 [==============================] - 230s 2s/step - loss: 1.8058 - accuracy: 0.9383 - val_loss: 0.0355 - val_accuracy: 0.9957
+Epoch 2/20
+103/103 [==============================] - ETA: 0s - loss: 0.2079 - accuracy: 0.9856
+For Epoch 1
+Accuracy has reach = 98.56% training has been stopped.
+103/103 [==============================] - 228s 2s/step - loss: 0.2079 - accuracy: 0.9856 - val_loss: 0.1202 - val_accuracy: 0.9922
+Test dataset 1
+3/3 [==============================] - 4s 1s/step - loss: 8.3809 - accuracy: 0.5714
+Test loss: 8.380878448486328
+Test accuracy: 0.5714285969734192
+Test dataset 2
+16/16 [==============================] - 27s 2s/step - loss: 2.5048 - accuracy: 0.8591
+Test loss: 2.504753351211548
+Test accuracy: 0.8591269850730896
+Test dataset 3
+5/5 [==============================] - 7s 1s/step - loss: 0.1026 - accuracy: 0.9874
+Test loss: 0.10260220617055893
+Test accuracy: 0.9874213933944702
+Test merged dataset
+24/24 [==============================] - 33s 1s/step - loss: 2.6542 - accuracy: 0.8541
+Test loss: 2.6542208194732666
+Test accuracy: 0.8540830016136169
+Train dataset_1_rock_papier_scissors_vgg16_generated.h5
+Epoch 1/50
+40/40 [==============================] - 11s 164ms/step - loss: 1.4787 - accuracy: 0.3750 - val_loss: 0.9263 - val_accuracy: 0.4828
+WARNING:tensorflow:Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches (in this case, 2000 batches). You may need to use the repeat() function when building your dataset.
+WARNING:tensorflow:Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches (in this case, 10 batches). You may need to use the repeat() function when building your dataset.
+Test dataset 1
+3/3 [==============================] - 3s 1s/step - loss: 5.6787 - accuracy: 0.6310
+Test loss: 5.678730487823486
+Test accuracy: 0.6309523582458496
+Test dataset 2
+16/16 [==============================] - 22s 1s/step - loss: 10.1611 - accuracy: 0.4683
+Test loss: 10.161077499389648
+Test accuracy: 0.4682539701461792
+Test dataset 3
+5/5 [==============================] - 7s 1s/step - loss: 4.2256 - accuracy: 0.4591
+Test loss: 4.225566387176514
+Test accuracy: 0.4591194987297058
+Test merged dataset
+24/24 [==============================] - 32s 1s/step - loss: 8.3937 - accuracy: 0.4846
+Test loss: 8.393655776977539
+Test accuracy: 0.484605073928833
+Train dataset_2_rock_papier_scissors_vgg16_generated.h5
+Epoch 1/50
+40/40 [==============================] - 74s 2s/step - loss: 0.3767 - accuracy: 0.8639 - val_loss: 0.0518 - val_accuracy: 0.9906
+Epoch 2/50
+40/40 [==============================] - ETA: 0s - loss: 0.0548 - accuracy: 0.9843
+For Epoch 1
+Accuracy has reach = 98.43% training has been stopped.
+40/40 [==============================] - 71s 2s/step - loss: 0.0548 - accuracy: 0.9843 - val_loss: 0.0196 - val_accuracy: 0.9969
+Test dataset 1
+3/3 [==============================] - 4s 1s/step - loss: 57.9546 - accuracy: 0.4167
+Test loss: 57.95455551147461
+Test accuracy: 0.4166666567325592
+Test dataset 2
+16/16 [==============================] - 22s 1s/step - loss: 19.4047 - accuracy: 0.7143
+Test loss: 19.404727935791016
+Test accuracy: 0.7142857313156128
+Test dataset 3
+5/5 [==============================] - 7s 1s/step - loss: 24.5723 - accuracy: 0.6164
+Test loss: 24.572309494018555
+Test accuracy: 0.6163522005081177
+Test merged dataset
+24/24 [==============================] - 32s 1s/step - loss: 24.8396 - accuracy: 0.6600
+Test loss: 24.839576721191406
+Test accuracy: 0.6599732041358948
+Train dataset_3_rock_papier_scissors_vgg16_generated.h5
+Epoch 1/50
+40/40 [==============================] - 74s 2s/step - loss: 0.4029 - accuracy: 0.8584 - val_loss: 0.0720 - val_accuracy: 0.9750
+Epoch 2/50
+40/40 [==============================] - 70s 2s/step - loss: 0.0598 - accuracy: 0.9794 - val_loss: 0.0331 - val_accuracy: 0.9875
+Epoch 3/50
+40/40 [==============================] - ETA: 0s - loss: 0.0347 - accuracy: 0.9937
+For Epoch 2
+Accuracy has reach = 99.37% training has been stopped.
+40/40 [==============================] - 70s 2s/step - loss: 0.0347 - accuracy: 0.9937 - val_loss: 0.0158 - val_accuracy: 0.9937
+Test dataset 1
+3/3 [==============================] - 4s 1s/step - loss: 38.8538 - accuracy: 0.5119
+Test loss: 38.85382843017578
+Test accuracy: 0.511904776096344
+Test dataset 2
+16/16 [==============================] - 21s 1s/step - loss: 35.2591 - accuracy: 0.5933
+Test loss: 35.259063720703125
+Test accuracy: 0.5932539701461792
+Test dataset 3
+5/5 [==============================] - 7s 1s/step - loss: 2.2821 - accuracy: 0.9308
+Test loss: 2.282106876373291
+Test accuracy: 0.9308176040649414
+Test merged dataset
+24/24 [==============================] - 32s 1s/step - loss: 28.6441 - accuracy: 0.6560
+Test loss: 28.644102096557617
+Test accuracy: 0.6559571623802185
+Train dataset_merged_rock_papier_scissors_vgg16_generated.h5
+Epoch 1/50
+40/40 [==============================] - 74s 2s/step - loss: 0.5143 - accuracy: 0.8180 - val_loss: 0.3190 - val_accuracy: 0.8906
+Epoch 2/50
+40/40 [==============================] - 75s 2s/step - loss: 0.1234 - accuracy: 0.9601 - val_loss: 0.3668 - val_accuracy: 0.8938
+Epoch 3/50
+40/40 [==============================] - ETA: 0s - loss: 0.0624 - accuracy: 0.9820
+For Epoch 2
+Accuracy has reach = 98.20% training has been stopped.
+40/40 [==============================] - 71s 2s/step - loss: 0.0624 - accuracy: 0.9820 - val_loss: 0.2192 - val_accuracy: 0.9344
+Test dataset 1
+3/3 [==============================] - 4s 1s/step - loss: 17.2595 - accuracy: 0.6190
+Test loss: 17.259546279907227
+Test accuracy: 0.6190476417541504
+Test dataset 2
+16/16 [==============================] - 22s 1s/step - loss: 8.3373 - accuracy: 0.8532
+Test loss: 8.33725357055664
+Test accuracy: 0.85317462682724
+Test dataset 3
+5/5 [==============================] - 7s 1s/step - loss: 3.0028 - accuracy: 0.9308
+Test loss: 3.002788782119751
+Test accuracy: 0.9308176040649414
+Test merged dataset
+24/24 [==============================] - 32s 1s/step - loss: 8.2051 - accuracy: 0.8434
+Test loss: 8.205116271972656
+Test accuracy: 0.8433734774589539
+
+Process finished with exit code 0
