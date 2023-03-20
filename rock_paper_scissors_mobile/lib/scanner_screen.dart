@@ -1,11 +1,10 @@
-import 'dart:typed_data';
-
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:rock_paper_scissors_mobile/clasifier.dart';
 import 'package:rock_paper_scissors_mobile/image_utils.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
-import 'package:tflite_flutter_helper/tflite_flutter_helper.dart';
+
+import 'classes.dart';
 
 class ScannerScreen extends StatefulWidget {
   @override
@@ -17,8 +16,8 @@ class _ScannerScreenState extends State<ScannerScreen> {
   late Interpreter interpreter;
   final classifier = Classifier();
 
-  bool isWorking = false;
   bool initialized = false;
+  DetectionClasses detected = DetectionClasses.nothing;
   DateTime lastShot = DateTime.now();
 
   @override
@@ -28,9 +27,6 @@ class _ScannerScreenState extends State<ScannerScreen> {
   }
 
   Future<void> initialize() async {
-    // Load the TensorFlow Lite model
-    await loadModel();
-
     await classifier.loadModel();
 
     final cameras = await availableCameras();
@@ -43,11 +39,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
     // Initialize the CameraController and start the camera preview
     await cameraController.initialize();
     await cameraController.startImageStream((image) {
-      if (DateTime
-          .now()
-          .difference(lastShot)
-          .inSeconds > 3) {
-        isWorking = true;
+      if (DateTime.now().difference(lastShot).inSeconds > 1) {
         processCameraImage(image);
       }
     });
@@ -57,24 +49,17 @@ class _ScannerScreenState extends State<ScannerScreen> {
     });
   }
 
-  Future<void> loadModel() async {
-    // Load the TensorFlow Lite model
-    try {
-      interpreter = await Interpreter.fromAsset('rock_paper_scissors_model.tflite');
-      final inputTensor = interpreter.getInputTensor(0);
-      print("Input shape ${inputTensor.shape}");
-    } catch (e) {
-      print(e);
-    }
-  }
-
   Future<void> processCameraImage(CameraImage cameraImage) async {
-    print('porccessing');
     final convertedImage = ImageUtils.convertYUV420ToImage(cameraImage);
 
-    await classifier.predict(convertedImage);
+    final result = await classifier.predict(convertedImage);
 
-    isWorking = false;
+    if (detected != result) {
+      setState(() {
+        detected = result;
+      });
+    }
+
     lastShot = DateTime.now();
   }
 
@@ -84,7 +69,24 @@ class _ScannerScreenState extends State<ScannerScreen> {
       appBar: AppBar(
         title: const Text('Flutter Camera Demo'),
       ),
-      body: initialized ? CameraPreview(cameraController) : const Center(child: CircularProgressIndicator()),
+      body: initialized
+          ? Column(
+              children: [
+                SizedBox(
+                  height: MediaQuery.of(context).size.width,
+                  width: MediaQuery.of(context).size.width,
+                  child: CameraPreview(cameraController),
+                ),
+                Text(
+                  "Detected: ${detected.label}",
+                  style: const TextStyle(
+                    fontSize: 28,
+                    color: Colors.blue,
+                  ),
+                ),
+              ],
+            )
+          : const Center(child: CircularProgressIndicator()),
     );
   }
 
