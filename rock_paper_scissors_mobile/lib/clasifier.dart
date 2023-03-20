@@ -43,10 +43,10 @@ class Classifier {
       }
     }
 
-    final inputShape = [1, 150, 150, 3];
     final output = Float32List(1 * 4).reshape([1, 4]);
 
-    final input = inputBytes.reshape(inputShape);
+    // Reshape to input format specific for model. 1 item in list with pixels 150x150 and 3 layers for RGB
+    final input = inputBytes.reshape([1, 150, 150, 3]);
 
     interpreter.run(input, output);
 

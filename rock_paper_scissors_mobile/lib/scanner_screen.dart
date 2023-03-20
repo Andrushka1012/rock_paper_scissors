@@ -38,7 +38,9 @@ class _ScannerScreenState extends State<ScannerScreen> {
 
     // Initialize the CameraController and start the camera preview
     await cameraController.initialize();
+    // Listen for image frames
     await cameraController.startImageStream((image) {
+      // Make predictions every 1 second to avoid overloading the device
       if (DateTime.now().difference(lastShot).inSeconds > 1) {
         processCameraImage(image);
       }

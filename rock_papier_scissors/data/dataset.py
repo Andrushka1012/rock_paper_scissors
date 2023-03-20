@@ -90,6 +90,7 @@ def get_dataset_3():
 
 
 def get_merged_dataset():
+    print("Load merged dataset")
     train_images_1, train_labels_1, test_images_1, test_labels_1 = get_dataset_1()
     train_images_2, train_labels_2, test_images_2, test_labels_2 = get_dataset_2()
     train_images_3, train_labels_3, test_images_3, test_labels_3 = get_dataset_3()
@@ -115,18 +116,19 @@ def generate_noice(original_dir: str):
     image.save(f"{original_dir}/nothing/{str(uuid.uuid4())}.jpg")
 
 
+# Generate nothing dataset with random images
 def generate_nothing_dataset():
     for i in range(100):
         generate_noice(TRAIN_DIR_1)
-    # for i in range(30):
-    #     generate_noice(TEST_DIR_1)
+    for i in range(30):
+        generate_noice(TEST_DIR_1)
 
     for i in range(500):
         generate_noice(TRAIN_DIR_2)
-    # for i in range(125):
-    #     generate_noice(TEST_DIR_2)
+    for i in range(125):
+        generate_noice(TEST_DIR_2)
 
     for i in range(400):
         generate_noice(TRAIN_DIR_3)
-    # for i in range(30):
-    #     generate_noice(TEST_DIR_3)
+    for i in range(30):
+        generate_noice(TEST_DIR_3)

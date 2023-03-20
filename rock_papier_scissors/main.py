@@ -56,9 +56,11 @@ def get_trained():
     return model
 
 
-rpc_model = restore_vgg16(test_model=True)
-# predict_on_video(rpc_model)
-convert(rpc_model)
+rpc_model = restore_vgg16()
+predict_on_video(rpc_model)
+
+# Convert to tf format
+# convert(rpc_model)
 
 # # while True:
 # #     predict_on_file(rpc_model)
