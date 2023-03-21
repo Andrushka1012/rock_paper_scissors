@@ -1,10 +1,12 @@
+import 'dart:isolate';
+
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:rock_paper_scissors_mobile/clasifier.dart';
-import 'package:rock_paper_scissors_mobile/image_utils.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 
 import 'classes.dart';
+import 'isolate_utils.dart';
 
 class ScannerScreen extends StatefulWidget {
   @override
@@ -15,8 +17,10 @@ class _ScannerScreenState extends State<ScannerScreen> {
   late CameraController cameraController;
   late Interpreter interpreter;
   final classifier = Classifier();
+  final isolateUtils = IsolateUtils();
 
   bool initialized = false;
+  bool isWorking = false;
   DetectionClasses detected = DetectionClasses.nothing;
   DateTime lastShot = DateTime.now();
 
@@ -36,12 +40,13 @@ class _ScannerScreenState extends State<ScannerScreen> {
       ResolutionPreset.medium, // Choose a resolution preset
     );
 
+    await isolateUtils.start();
     // Initialize the CameraController and start the camera preview
     await cameraController.initialize();
     // Listen for image frames
     await cameraController.startImageStream((image) {
       // Make predictions every 1 second to avoid overloading the device
-      if (DateTime.now().difference(lastShot).inSeconds > 1) {
+      if (!isWorking) {
         processCameraImage(image);
       }
     });
@@ -52,9 +57,11 @@ class _ScannerScreenState extends State<ScannerScreen> {
   }
 
   Future<void> processCameraImage(CameraImage cameraImage) async {
-    final convertedImage = ImageUtils.convertYUV420ToImage(cameraImage);
+    setState(() {
+      isWorking = true;
+    });
 
-    final result = await classifier.predict(convertedImage);
+    final result = await inference(cameraImage);
 
     if (detected != result) {
       setState(() {
@@ -62,7 +69,10 @@ class _ScannerScreenState extends State<ScannerScreen> {
       });
     }
 
-    lastShot = DateTime.now();
+    setState(() {
+      lastShot = DateTime.now();
+      isWorking = false;
+    });
   }
 
   @override
@@ -92,9 +102,24 @@ class _ScannerScreenState extends State<ScannerScreen> {
     );
   }
 
+  Future<DetectionClasses> inference(CameraImage cameraImage) async {
+    ReceivePort responsePort = ReceivePort();
+    var isolateData = IsolateData(
+      cameraImage: cameraImage,
+      interpreterAddress: classifier.interpreter.address,
+      responsePort: responsePort.sendPort,
+    );
+
+    isolateUtils.sendPort.send(isolateData..responsePort = responsePort.sendPort);
+    var result = await responsePort.first;
+
+    return result;
+  }
+
   @override
   void dispose() {
     cameraController.dispose();
+    isolateUtils.dispose();
     super.dispose();
   }
 }

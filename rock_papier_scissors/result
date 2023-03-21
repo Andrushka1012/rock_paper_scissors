@@ -1,0 +1,35 @@
+CNN
+
+Test dataset 1
+3/3 [==============================] - 0s 115ms/step - loss: 1807.1370 - accuracy: 0.1548
+Test loss: 1807.136962890625
+Test accuracy: 0.1547619104385376
+Test dataset 2
+19/19 [==============================] - 3s 139ms/step - loss: 152.7770 - accuracy: 0.8690
+Test loss: 152.77703857421875
+Test accuracy: 0.8689883947372437
+Test dataset 3
+6/6 [==============================] - 1s 128ms/step - loss: 67.0219 - accuracy: 0.9351
+Test loss: 67.0219497680664
+Test accuracy: 0.9351351261138916
+Test merged dataset
+28/28 [==============================] - 4s 143ms/step - loss: 293.9485 - accuracy: 0.8142
+Test loss: 293.9484558105469
+Test accuracy: 0.8142201900482178
+
+VGG 16
+
+Test loss: 18.8491268157959
+Test accuracy: 0.5476190447807312
+Test dataset 2
+19/19 [==============================] - 34s 2s/step - loss: 3.9735 - accuracy: 0.9088
+Test loss: 3.9734838008880615
+Test accuracy: 0.9087893962860107
+Test dataset 3
+6/6 [==============================] - 11s 2s/step - loss: 2.9895 - accuracy: 0.9568
+Test loss: 2.9894509315490723
+Test accuracy: 0.9567567706108093
+Test merged dataset
+28/28 [==============================] - 52s 2s/step - loss: 5.1977 - accuracy: 0.8842
+Test loss: 5.197689533233643
+Test accuracy: 0.8841742873191833

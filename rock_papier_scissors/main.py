@@ -52,11 +52,11 @@ def get_trained():
     train_images = train_images_merged
     train_labels = train_labels_merged
 
-    model = train_vgg16(train_images, train_labels)
+    model = restore_vgg16(test_model=True)
     return model
 
 
-rpc_model = restore_vgg16()
+rpc_model = get_trained()
 predict_on_video(rpc_model)
 
 # Convert to tf format
