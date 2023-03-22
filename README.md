@@ -3,6 +3,10 @@ This repository contains the code for a Flutter app that uses a custom Convoluti
 
 The app uses the camera of the device to capture an image of the user's hand gesture, and then uses our image classification model to predict the correct gesture. The project is an example of how to integrate a custom machine learning model into a Flutter app, making use of the platform's built-in features such as the camera.
 
+Result app looks following:
+
+![Alt Text](/result.gif)
+
 ## Installation
 
 To run this app, you will need to have Flutter installed on your machine. Once Flutter is installed, clone this repository and run `flutter run` on rock_paper_scissors_mobile to start the app.
