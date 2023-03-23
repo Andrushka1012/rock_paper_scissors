@@ -22,7 +22,6 @@ class _ScannerScreenState extends State<ScannerScreen> {
   bool initialized = false;
   bool isWorking = false;
   DetectionClasses detected = DetectionClasses.nothing;
-  DateTime lastShot = DateTime.now();
 
   @override
   void initState() {
@@ -45,7 +44,7 @@ class _ScannerScreenState extends State<ScannerScreen> {
     await cameraController.initialize();
     // Listen for image frames
     await cameraController.startImageStream((image) {
-      // Make predictions every 1 second to avoid overloading the device
+      // Make predictions only if not busy
       if (!isWorking) {
         processCameraImage(image);
       }
@@ -70,7 +69,6 @@ class _ScannerScreenState extends State<ScannerScreen> {
     }
 
     setState(() {
-      lastShot = DateTime.now();
       isWorking = false;
     });
   }
@@ -104,13 +102,13 @@ class _ScannerScreenState extends State<ScannerScreen> {
 
   Future<DetectionClasses> inference(CameraImage cameraImage) async {
     ReceivePort responsePort = ReceivePort();
-    var isolateData = IsolateData(
+    final isolateData = IsolateData(
       cameraImage: cameraImage,
       interpreterAddress: classifier.interpreter.address,
       responsePort: responsePort.sendPort,
     );
 
-    isolateUtils.sendPort.send(isolateData..responsePort = responsePort.sendPort);
+    isolateUtils.sendPort.send(isolateData);
     var result = await responsePort.first;
 
     return result;
