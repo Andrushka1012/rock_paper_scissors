@@ -16,11 +16,11 @@ TARGET_SIZE = (INPUT_WIDTH, INPUT_HEIGHT)
 NUM_CATEGORIES = 4
 
 TRAIN_DIR_1 = "data/Dataset/train"
-TEST_DIR_1 = "data/Dataset/test/"
+TEST_DIR_1 = "data/Dataset/test"
 TRAIN_DIR_2 = "data/Dataset2/train"
-TEST_DIR_2 = "data/Dataset2/test/"
+TEST_DIR_2 = "data/Dataset2/test"
 TRAIN_DIR_3 = "data/Dataset3/train"
-TEST_DIR_3 = "data/Dataset3/test/"
+TEST_DIR_3 = "data/Dataset3/test"
 
 CATEGORIES = ["rock", "paper", "scissors", "nothing"]
 
